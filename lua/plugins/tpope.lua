@@ -8,5 +8,6 @@ return {
     "tpope/vim-bundler",
     "tpope/vim-eunuch",
     "tpope/vim-rhubarb",
+    "tpope/vim-rails",
   }
 }

@@ -20,4 +20,8 @@ require("util/keymapper")
 require("colorscheme")
 require("keymapping")
 require("options")
-require("lualine-config")
+-- require("lualine-config")
+require("tabnine-config")
+
+require('lualine').setup()
+
