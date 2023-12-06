@@ -15,6 +15,7 @@ mapkey("<C-j>", "wincmd j", "t") -- Navigate Down
 mapkey("<C-k>", "wincmd k", "t") -- Navigate Up
 mapkey("<C-l>", "wincmd l", "t") -- Navigate Right
 
+-- close all buffers with leader-q
 vim.keymap.set('n', '<leader>q', ':bufdo bd<Cr>')
 
 -- vim-test
@@ -22,3 +23,7 @@ vim.keymap.set('n', '<leader>t', ':TestFile<Cr>')
 vim.keymap.set('n', '<leader>s', ':TestNearest<Cr>')
 vim.keymap.set('n', '<leader>l', ':TestLast<Cr>')
 vim.keymap.set('n', '<leader>a', ':TestSuite<Cr>')
+
+-- remap u/U for undo/redo
+vim.api.nvim_set_keymap('n', 'U', '<C-R>', { noremap = true })
+

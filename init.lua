@@ -21,7 +21,7 @@ require("colorscheme")
 require("keymapping")
 require("options")
 -- require("lualine-config")
-require("tabnine-config")
+-- require("tabnine-config")
 
 require('lualine').setup()
-
+require('coc-settings')
