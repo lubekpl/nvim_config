@@ -1,0 +1,5 @@
+return {
+  {
+    "mathofprimes/nightvision-nvim",
+  }
+}

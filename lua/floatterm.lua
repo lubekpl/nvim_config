@@ -2,3 +2,4 @@
 -- pane and come back to it
 -- vim.keymap.set('t', '<Esc>', "[[<C-\><C-n>]]")
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]],{noremap=true})
+

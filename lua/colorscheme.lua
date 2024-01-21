@@ -1,1 +1,1 @@
-vim.cmd [[colorscheme greenvision]]
+vim.cmd [[colorscheme nightvision]]

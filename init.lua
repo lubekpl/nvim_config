@@ -1,7 +1,7 @@
 vim.g.mapleader = ' '
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
+ if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
     "clone",
@@ -20,8 +20,12 @@ require("util/keymapper")
 require("colorscheme")
 require("keymapping")
 require("options")
--- require("lualine-config")
+require("lualine-config")
 -- require("tabnine-config")
 
 require('lualine').setup()
 require('coc-settings')
+
+
+-- If you use init.lua
+vim.g.nv_dark = 'aqua'
