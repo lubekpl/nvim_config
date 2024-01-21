@@ -20,12 +20,8 @@ require("util/keymapper")
 require("colorscheme")
 require("keymapping")
 require("options")
-require("lualine-config")
--- require("tabnine-config")
+require("harpoon-config")
+require("tabnine-config")
 
-require('lualine').setup()
 require('coc-settings')
-
-
--- If you use init.lua
-vim.g.nv_dark = 'aqua'
+require("lualine-config")
