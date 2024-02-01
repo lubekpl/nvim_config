@@ -1,4 +1,5 @@
 {
+  "ack.vim": { "branch": "master", "commit": "36e40f9ec91bdbf6f1adf408522a73a6925c3042" },
   "beacon.nvim": { "branch": "master", "commit": "a786c9a89b2c739c69f9500a2f70f2586c06ec27" },
   "coc.nvim": { "branch": "master", "commit": "3de02d70839b30b9744e3005f183fe0850027da3" },
   "greenvision": { "branch": "master", "commit": "a02c78c7fbf9e9c4de6fc0cb988a4366216a9b44" },

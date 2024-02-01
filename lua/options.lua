@@ -23,7 +23,8 @@ opt.cmdheight = 1
 opt.scrolloff = 10
 opt.completeopt = "menuone,noinsert,noselect"
 opt.showbreak = ↪
-vim.opt.listchars = {eol = '↲', tab = '▸ ', trail = '·'}
+opt.list = true
+opt.listchars = {eol = '↲', tab = '▸ ', trail = '·'}
 
 -- Behaviour
 opt.hidden = true
