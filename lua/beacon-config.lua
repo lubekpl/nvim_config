@@ -10,3 +10,6 @@ require('beacon').setup({
 	ignore_buffers = {},
 	ignore_filetypes = {},
 })
+
+
+vim.cmd([[highlight Beacon guibg=white ctermbg=15]])
