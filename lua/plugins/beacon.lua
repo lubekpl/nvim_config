@@ -1,5 +1,5 @@
 return {
   {
-    "danilamihailov/beacon.nvim",
+    "rainbowhxch/beacon.nvim",
   }
 }

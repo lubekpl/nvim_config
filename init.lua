@@ -23,5 +23,7 @@ require("options")
 require("harpoon-config")
 require("tabnine-config")
 
-require('coc-settings')
+require("coc-settings")
 require("lualine-config")
+require("indent-blankline")
+require("beacon-config")
