@@ -32,6 +32,18 @@ vim.api.nvim_set_keymap(
   { noremap = true }
 )
 require("telescope").load_extension("ag")
+
+require("telescope").load_extension("tmuxinator")
+vim.api.nvim_set_keymap(
+  "n",
+  "<space>t",
+  ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+  { noremap = true }
+)
+
+vim.keymap.set('n', '<leader>nt', function()
+require('telescope').extensions.tmuxinator.projects(require('telescope.themes').get_dropdown({}))
+end, { desc = 'tmuxinator' })
 ------------------------------------------------------------------------- telescope
 
 local mapkey = require("util.keymapper").mapkey

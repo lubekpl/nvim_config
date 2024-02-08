@@ -20,10 +20,12 @@ require("util/keymapper")
 require("colorscheme")
 require("keymapping")
 require("options")
+
 require("harpoon-config")
 require("tabnine-config")
-
 require("coc-settings")
 require("lualine-config")
 require("indent-blankline")
 require("beacon-config")
+require("smartcolumn").setup()
+require("focus-config")
