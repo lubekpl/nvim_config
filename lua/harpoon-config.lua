@@ -20,7 +20,7 @@ local function toggle_telescope(harpoon_files)
 end
 
 
-vim.keymap.set("n", "<leader>na", function() harpoon:list():append() end, { desc="Harpoon add" })
+vim.keymap.set("n", "<leader>na", function() harpoon:list():add() end, { desc="Harpoon add" })
 vim.keymap.set("n", "<leader>nl", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc="Harpoon quick menu" })
 
 -- vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)

@@ -1,4 +1,7 @@
-vim.g.mapleader = " "
+vim.g.mapleader = "\\"
+
+vim.api.nvim_set_keymap('n', '<Space>', '<leader>', {})
+vim.api.nvim_set_keymap('v', '<Space>', '<leader>', {})
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -22,11 +25,11 @@ require("keymapping")
 require("options")
 
 require("harpoon-config")
-require("tabnine-config")
-require("coc-settings")
 require("lualine-config")
 require("indent-blankline")
 require("beacon-config")
 require("smartcolumn").setup()
 require("focus-config")
 require("scrollview-config")
+require("notify-config")
+require("noice-config")
