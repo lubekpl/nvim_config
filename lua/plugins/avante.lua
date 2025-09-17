@@ -25,7 +25,8 @@ return {
         
         -- Configure the chat
         chat = {
-          model = "gpt-4",  -- Copilot uses GPT-4
+          model = "claude-sonnet-3.7",  -- Uncomment to switch to Claude 3.7 Sonnet
+          -- model = "gpt-4.5",  -- Defaulting to Claude 3.7 Sonnet or GPT-4.5
           temperature = 0.7,
           max_tokens = 4000,
         },
