@@ -2,16 +2,8 @@ return {
   'stevearc/conform.nvim',
   event = { "BufWritePre" },
   cmd = { "ConformInfo" },
-  keys = {
-    {
-      "<leader>f",
-      function()
-        require("conform").format({ async = true, lsp_fallback = true })
-      end,
-      mode = "",
-      desc = "Format buffer",
-    },
-  },
+  -- Note: <leader>cf for manual format is defined in keymapping.lua
+  -- Format on save is enabled below, so manual formatting is rarely needed
   opts = {
     formatters_by_ft = {
       lua = { "stylua" },
@@ -44,7 +36,7 @@ return {
       lsp_fallback = true,
     },
     format_on_save = {
-      timeout_ms = 500,
+      timeout_ms = 2000,
       lsp_fallback = true,
     },
     formatters = {
