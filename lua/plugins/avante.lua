@@ -8,25 +8,20 @@ return {
     },
     config = function()
       require("avante").setup({
-        -- Set Copilot as the provider
-        provider = "copilot",
-        
-        -- Configure the UI
+        provider = "claude",
+
         ui = {
           width = 80,
           height = 20,
           position = "right",
         },
-        
-        -- Configure Copilot integration
+
         selector = {
           exclude_auto_select = { "NvimTree" },
         },
-        
-        -- Configure the chat
+
         chat = {
-          model = "claude-sonnet-3.7",  -- Uncomment to switch to Claude 3.7 Sonnet
-          -- model = "gpt-4.5",  -- Defaulting to Claude 3.7 Sonnet or GPT-4.5
+          model = "claude-sonnet-3.7",
           temperature = 0.7,
           max_tokens = 4000,
         },

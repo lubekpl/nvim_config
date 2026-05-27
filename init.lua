@@ -21,9 +21,6 @@ require("lazy").setup("plugins",opts)
 -- Load error handling first to suppress autocommand errors
 require("error-handling")
 
--- Map tab to accept autocomplete suggestions
-vim.api.nvim_set_keymap('i', '<Tab>', "copilot#Accept('<Tab>')", { noremap = true, silent = true, expr = true })
-
 require("util/keymapper")
 
 require("colorscheme")
